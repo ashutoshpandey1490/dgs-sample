@@ -1,0 +1,17 @@
+type Query {
+    restaurants(name: String!) : [Restaurant]
+}
+
+type Restaurant {
+    id : Int
+    name : String
+    contact : Int
+    address : String
+    dish : [Dish]
+}
+
+type Dish {
+    id: Int
+    name: String
+    price: Int
+}
